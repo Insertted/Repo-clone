@@ -1,4 +1,4 @@
-# Заметки
+# Заметки1
 
 ## Синхронизация репозитория преподователя
 1. **git remote set-url origin https://gitflic.ru/project/rurewa/mfua**
