@@ -4,7 +4,7 @@
 
 - [Todo](/Todo.md)
 - [Markdown](/Markdown.md)
-- [Bash](/content/Bash/)
+- [Bash](/content/Bash/README.md)
 - [Docker](/content/Docker.md)
 - [Основы проектирования баз данных](/content/Basics_database_design/README.md)
 - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
@@ -22,7 +22,7 @@
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia)
 1. **VSCode** [VSCode](https://code.visualstudio.com/)
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
-1. Компилятор **gcc** (Для Windows MinGW) [MinGW](https://www.mingw-w64.org/downloads/)
+1. Компилятор **gcc** (Для Windows MSYS2) [Cygwin](https://cygwin.com/) или [MSYS2](https://www.msys2.org/)
 1. **WSL 2.0** - установить Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
 1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
@@ -197,6 +197,11 @@ inxi -F
 git --version
 ```
 
+Показать справку о Git
+```shell
+git help
+```
+
 **Сменить редактор по умолчанию:**
 
 На **Nano** (проще для новичков):
@@ -227,7 +232,7 @@ git config --global user.email "rurewa@mail.ru"
 
 > где вместо `rurewa@mail.ru` - ваша почта
 
-#### 2. Клонировать удалённый репозиторий на свой компьютер
+#### 2. Клонировать удалённый репозиторий на свой компьютер в Git-Bash
 
 ```shell
 git clone https://gitflic.ru/project/rurewa/mfua
@@ -250,9 +255,21 @@ git status
 git status
 ```
 
-Показать сравнение до и после изменения файлов (до git add)
+Показать сравнение изменения файлов до и после (до git add)
+
+```git diff```
+
+сравнение до ```git commit - m```
+
+```git diff --staged```
+
+> чтобы выйти из списка коммитов, выполните **Q**
+
+> Выйти из режима сравнения, выполните **Q**
+
+Отменить изменения
 ```shell
-git diff
+git restore README.md
 ```
 
 #### 7. Подготовить файлы к коммиту (добавить)
@@ -267,23 +284,34 @@ git add .
 git add *
 ```
 
+```.gitignore``` - файл, который содержит blacklist несохраняемых файлов.
+
 или объединить **git add** с **git commit**
 ```shell
 git commit -a
 ```
 
-> Откроется текстовый редактор командной сроки, в котором нужно записать текст коммит
+> Откроется текстовый редактор командной сроки, в котором нужно записать текст коммита
 
 Отменить добавленные изменения
 ```shell
 git restore --staged README.md
 ```
 
-#### 8. Закоммитить
+#### 8. Закоммитить (зафиксировать)
 
 ```shell
 git commit -m "Some message"
 ```
+
+Объединить ```git add``` и ```git commit```:
+```shell
+git commit -a -m 'Update README.md'
+```
+
+Изменение текста последнего коммита
+
+```git commit --amend```
 
 #### 9. Запушить
 
@@ -291,11 +319,22 @@ git commit -m "Some message"
 git push
 ```
 
+> Перед ```git push``` желательно выполнить ```git pull```
+
+или сразу обе команды:
+```shell
+git pull && git push
+```
+
 или, если не получилось с 1-го раза запушить, то:
 
 ```shell
 git push -u origin master
 ```
+
+`-u` создаёт новую ветку, если таковая не существует
+
+где **master** - имя нужной ветки. Вместо **master** может быть **main**
 
 #### 10. Проверить изменения на сайте удалённого репозитория
 
@@ -314,6 +353,7 @@ git log
 ```
 
 > чтобы выйти из списка коммитов, выполните **Q**
+> для перемещения по списку коммитов, жмите стрелки **ВВЕРХ/ВНИЗ** или **Pg Up/Pg Dn** или **Home/End**
 
 Показать подробности каждого коммита
 
@@ -324,6 +364,12 @@ git log
 git log -p -3
 ```
 покажет 3 последних коммита
+
+Показать краткую информацию о коммитах
+
+```git log --stat```
+
+> чтобы выйти из списка коммитов, выполните **Q**
 
 Показать последний коммит кратко
 
@@ -337,55 +383,112 @@ git log -p -3
 
 > чтобы выйти из списка коммитов, выполните **Q**
 
-Показать кратую информацию о коммитах
-
-```git log --stat```
-
-> чтобы выйти из списка коммитов, выполните **Q**
-
 Показать хеши коммитов
 
 ```git log --oneline```
 
 > чтобы выйти из списка коммитов, выполните **Q**
 
-Сравнения коммитов
+> **Хэш** - это уникальный идентификатор
 
-```git diff```
+Переместиться на указанный коммит назад
+```shell
+git checkout 94120de
+```
 
-сравнение до ```git commit - m```
+Вернуться на последний коммит
+```shell
+git checkout master
+```
 
-```git diff --staged```
-
-> чтобы выйти из списка коммитов, выполните **Q**
+или вместо **master** укажите **main**
 
 Показать настройки текущего (локального) git-репозитория
 
 ```git config --list```
 
-Изменение комментария последнего коммита
-
-```git commit --amend```
-
 Показать информацию об удалённом репозитории
 
+Показать источники
 ```git remote -v```
 
 ```git remote show origin```
 
-Отмена изменений
+### Работа с git-ветками
 
-```git reset``` - отмена индексации
+Показать локальные ветки
+```shell
+git branch
+```
 
-```git restore```
+или показать все ветки (в т.ч. удалённые)
 
-```git restore --staged``` - сработает только после ```add .```
+```shell
+git branch --all
+```
 
-Объединить команды ```git add``` . и ```git commit -m```
+Создать новую локальную ветку
+```shell
+git branch test
+```
 
-```git commit -a 'Some comments'```
+где test - это имя создаваемой ветки
 
-#### Основные команды bash (командная строка, консоль)
+Переключиться на другую ветку
+```shell
+git switch master
+```
+
+или
+
+```shell
+git checkout test
+```
+
+ещё можно создать новую ветку с автоматическим переходом в неё
+```shell
+git checkout -b test
+```
+
+Отправить новую ветку на сервер
+```shell
+git push --set-upstream origin test
+```
+
+где `test` -  имя отправляемой ветки
+
+Удалить удалённую ветку
+```shell
+git push origin --delete test
+```
+
+Удалить локальную ветку
+```shell
+git branch -d test
+```
+
+#### Слияние веток
+
+Ветку **anybranch** слить с **master**
+
+Переходим в ветку master
+```shell
+git switch master
+```
+
+и выполняем слияние 2-х веток в одну
+
+```shell
+git merge anybranch
+```
+
+#### Файл .gitignore
+
+"Чёрный список" файлов (их расширений), которые не нужно сохранять в проекте. Обычно это фременные файлы.
+
+[A collection of .gitignore templates](https://github.com/github/gitignore)
+
+### Основные команды bash (командная строка, консоль)
 
 **Bash** - командный интерпретатор и скриптовый язык программирования
 
@@ -548,3 +651,11 @@ choco install tree
 1. Все файлы с именами латинскими буквами без пробелов
 
 [Мои заметки по базовой работе с Git](https://gitflic.ru/project/rurewa/education/blob?file=content%2FGit%2FREADME.md&branch=master&mode=markdown)
+
+## Вопросы к экзамену
+
+[Вопросы к экзамену по дисциплине «ОСНОВЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ»](/content/Basics_database_design/questions.md)
+
+[Вопросы к экзамену по дисциплине «ПОДДЕРЖКА И ТЕСТИРОВАНИЕ ПРОГРАММНЫХ МОДУЛЕЙ»](/content/SupportAndTesting_of_software_modules/questions.md)
+
+[Вопросы к экзамену по дисциплине «ОБЕСПЕЧЕНИЕ КАЧЕСТВА ФУНКЦИОНИРОВАНИЯ КОМПЬЮТЕРНЫХ СИСТЕМ»](/content/Ensuring_quality_computer_systems_functioning/questions.md)
