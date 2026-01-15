@@ -4,6 +4,7 @@
 1. **git fetch upstream вытащить файлы**
 2. **git merge upstream/master слить 2 репозитория**
 3. **git push (origin master)**
+4. **Нажать сейв и enter**
 
 ## Базовые команды Bash
  
