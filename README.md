@@ -49,7 +49,7 @@
     - [Альт Образование 11 для виртуальной машины](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso) - пока не обязательно!
 1. Нейросети [DeepSeek](https://chat.deepseek.com/) и [Cursor](https://cursor.com/)
 
-> Периодически следует обновлять установленные приложения. Это удобней делать через **PoweroShell** командой ` winget upgrade --all`
+> Периодически следует обновлять все установленные приложения. Это удобней делать через **PoweroShell** командой ` winget upgrade --all`
 
 ### Git
 
