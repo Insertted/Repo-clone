@@ -18,7 +18,7 @@
 ## Навигация по документу
 
 - [Git](#git)
-- [WSL 2.0 для Windows 10](#wsl-20-для-windows-10-для-работы-с-бд)
+- [WSL 2.0 для Windows 10/11](#wsl-20-для-windows-10-для-работы-с-бд)
 - [Docker](#docker)
 - [Virtual Box (Для организации контроллера домена)](#virtual-box-для-организации-контроллера-домена)
 - [Минимальные настройки VSCode](#минимальные-настройки-vscode)
@@ -29,10 +29,10 @@
 
 1. Персональный компьютер с монитором (лучше два монитора) и аудиогарнитура. Хороший интернет
 1. Для учёбы на **IT** лучше использовать **Linux**, [рекомендую Альт Образование 11](https://www.basealt.ru/alt-education)
-1. Для тех, кто прислушался к моему совету по использованию **Linux** в учёбе, [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md).
-1. Ниже ссылки и инструкции для пользователей **Windows**
+1. Для тех, кто прислушался к моему совету и решился на **Linux** в учёбе, [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md).
+1. Ниже ссылки и инструкции для пользователей **Windows 10/11**
 1. Проверить у себя в **PowerShell** установленные WinGet командой `winget info`, если не установлен, то:
-    1. Установить [WinGet (Windows Package Manager)](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
+    - Установить [WinGet (Windows Package Manager)](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или в **PowerShell** - `winget install Git.Git`
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
@@ -46,8 +46,7 @@
 1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/) или в **PowerShell** - `winget install Docker.DockerDesktop`
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики) - пока не обязательно!
 [Virtual Box](https://www.oracle.com/virtualization/virtualbox/) или в **PowerShell** - `winget install --id=Oracle.VirtualBox -e`
-
-[Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso) - пока не обязательно!
+    - [Альт Образование 11 для виртуальной машины](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso) - пока не обязательно!
 1. Нейросети [DeepSeek](https://chat.deepseek.com/) и [Cursor](https://cursor.com/)
 
 > Периодически следует обновлять установленные приложения. Это удобней делать через **PoweroShell** командой ` winget upgrade --all`
