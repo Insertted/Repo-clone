@@ -32,7 +32,7 @@
 1. Для тех, кто прислушался к моему совету по использованию **Linux** в учёбе, [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md).
 1. Ниже ссылки и инструкции для пользователей **Windows**
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
-1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или в **PowerShell** - `winget install Git`
+1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или в **PowerShell** - `winget install Git.Git`
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
 1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
