@@ -28,21 +28,26 @@
 **Минимальные требования к студентам:**
 
 1. Персональный компьютер и аудиогарнитура.
-1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW)
-1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/)
+1. Для учёбы на **IT** лучше использовать Linux, [мой выбор Альт Образование 11](https://www.basealt.ru/alt-education)
+1. Для тех, кто прислушался к моему совету по использованию Linux в учёбе, инструкция по получению и настройке Альт Линукс Образование 11.
+1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
+1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или в **PowerShell** - `winget install Git`
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
 1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
-1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia) (не обязательно)
-1. **VSCode** [VSCode](https://code.visualstudio.com/)
+1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia) - `winget install gnome.Dia` (не обязательно)
+1. **VSCode** [VSCode](https://code.visualstudio.com/) или в **PowerShell** - `winget install Microsoft.VisualStudioCode`
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
-1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/) или [Clang](https://releases.llvm.org/download.html) - не обязательно!
+1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/) или [Clang](https://releases.llvm.org/download.html)  или в **PowerShell** - `winget install LLVM.LLVM` - не обязательно!
 1. **WSL 2.0** - установить Ubuntu - для БД etc. [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
-1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
+1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/) или в **PowerShell** - `winget install Docker.DockerDesktop`
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики) - пока не обязательно!
-[Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
+[Virtual Box](https://www.oracle.com/virtualization/virtualbox/) или в **PowerShell** - `winget install --id=Oracle.VirtualBox -e`
+
 [Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso) - пока не обязательно!
 1. Нейросети [DeepSeek](https://chat.deepseek.com/) и [Cursor](https://cursor.com/)
+
+> Периодически следует обновлять установленные приложения. Это удобней делать через **PoweroShell** командой ` winget upgrade --all`
 
 ### Git
 
