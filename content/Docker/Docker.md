@@ -479,3 +479,9 @@ docker image prune -a
 ```
 
 > На вопрос "Are you sure you want to continue?" ответьте 'y'
+
+
+Удалить все образы
+```shell
+docker rmi -f $(docker images -q)
+```

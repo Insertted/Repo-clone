@@ -5,11 +5,19 @@
 docker run -d --name my-nginx -p 80:80 nginx:alpine
 ```
 
+Проверить работоспособность контейнера командой:
 ```shell
 curl http://localhost
 ```
 
-[Проверить в браузере: http://localhost](http://localhost)
+[Или запустить в браузере: http://localhost](http://localhost)
+
+Чтобы создать и запустить ещё один контейнер, надо указать другое имя и порт, например:
+```shell
+docker run -d --name nginx-copy -p 81:80 nginx:alpine
+```
+
+[Или запустить в браузере: http://localhost:81](http://localhost:81)
 
 ### Полезные команды для работы
 
@@ -40,6 +48,9 @@ docker logs my-nginx
 ```shell
 docker logs -f my-nginx  # в реальном времени
 ```
+
+> Чтобы выйти из режима просмотра логов, нужно выполнить `Ctrl+C`
+
 #### Войти в контейнер
 ```shell
 docker exec -it my-nginx /bin/sh
@@ -49,6 +60,12 @@ docker exec -it my-nginx /bin/sh
 ```shell
 cat /etc/os-release
 ```
+
+```shell
+top
+```
+
+> Чтобы выйти из top, нужно выполнить `Q`
 
 > т.е. это скорей всео какой-то Linux, то можно попробовать повыполнять разные команды из Linux
 
