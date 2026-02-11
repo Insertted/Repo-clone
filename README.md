@@ -28,9 +28,9 @@
 **Минимальные требования к студентам:**
 
 1. Персональный компьютер с монитором (лучше два монитора) и аудиогарнитура. Хороший интернет
-1. Для учёбы на **IT** лучше использовать **Linux**, [рекомендую Альт Образование 11](https://www.basealt.ru/alt-education)
-1. Для тех, кто прислушался к моему совету и решился на **Linux** в учёбе, [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md).
-1. Ниже ссылки и инструкции для пользователей **Windows 10/11**
+1. Для изучения **IT** технологий лучше использовать какой-нибудь **Linux**, например [Альт Образование 11](https://www.basealt.ru/alt-education)
+1. Для пользователей **Linux** [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md)
+1. Для пользователей **Windows 10/11**
 1. Проверить у себя в **PowerShell** установленные WinGet командой `winget --info`, если не установлен, то:
     - Установить [WinGet (Windows Package Manager)](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
