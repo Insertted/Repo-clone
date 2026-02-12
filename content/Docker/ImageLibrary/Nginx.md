@@ -16,7 +16,7 @@ curl http://localhost
 
 Чтобы создать и запустить ещё один контейнер `nginx:alpine`, надо указать другое имя и порт, например:
 ```shell
-docker run -d --name nginx-copy -p 81:80 nginx:alpine
+docker run -d --name my-nginx-copy -p 81:80 nginx:alpine
 ```
 
 [Или запустить в браузере: http://localhost:81](http://localhost:81)
@@ -26,6 +26,11 @@ docker run -d --name nginx-copy -p 81:80 nginx:alpine
 #### Показать запущенные контейнеры
 ```shell
 docker ps
+```
+
+#### Подробная информация о контейнере
+```shell
+docker inspect my-nginx
 ```
 
 #### Остановить контейнер
