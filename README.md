@@ -127,6 +127,7 @@ git config --global user.email "rosa@mail.ru"
 
 ### Docker (Разработка, тестирование и запуск различного ПО)
 
+1. [Сначал включите **WSL** на своём компьютере!](#wsl-20-для-windows-10-для-работы-с-бд)
 1. [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/) или командой в **PowerShell** `winget install Docker.DockerDesktop`
 1. Выполнять авторизацию в **Docker-Desktop** (можно через Google), указать `personal`;
 1. Перезагрузить компьютер;
