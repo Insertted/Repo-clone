@@ -14,7 +14,9 @@
 - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
 - [Поддержка и тестирование программных модулей](/content/SupportAndTesting_of_software_modules/)
 
-[Минимальные и рекомендуемые технические требования для рабочего пространства современного it-студента](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
+---
+
+> [Минимальные и рекомендуемые технические требования для рабочего пространства современного it-студента](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
 
 ## Навигация по документу
 
@@ -58,6 +60,8 @@
 winget install Microsoft.Teams Git.Git Microsoft.VisualStudioCode LLVM.LLVM
 ```
 
+---
+
 ### Git
 
 #### Минимальные настройки Git в Windows/Linux
@@ -68,25 +72,21 @@ winget install Microsoft.Teams Git.Git Microsoft.VisualStudioCode LLVM.LLVM
 ```shell
 git config --global core.editor "nano"
 ```
-
 Представиться системе **Git**:
-
 ```shell
 git config --global user.name "Rosa"
 ```
-
 > где вместо **Rosa** - ваш **username**
-
 ```shell
 git config --global user.email "rosa@mail.ru"
 ```
-
 > где вместо `rosa@mail.ru` - ваша почта
-
 ### [Подробней о Git >>>](/content/Git/README.md)
 
 
-### WSL 2.0 для Windows 10/11 (для работы с Docker etc.)
+---
+
+### WSL 2.0 для Windows 10/11 (может понадобиться для работы с Docker etc.)
 
 Проверить поддержку **CPU** виртуализации на вашем оборудовании
 
@@ -102,26 +102,28 @@ git config --global user.email "rosa@mail.ru"
     - Запустить **Windows PowerShell** (Администратор)
     - Проверка подсистемы **WSL 2.0** командой `wsl --version` и `wsl --status`
     - Обновить **WSL 2.0** командой `wsl --update`
-    - Установить **WSL 2.**0 `wsl --install`
-    - Когда система предложит указать имя пользователя **UNIX**, надо указать `user` и **Enter**
-    - Пароль польователя `user` - `123` (при наборе пароля он никак не отображается, но всё равно набирается) и **Enter**. Повтори пароль и **Enter**
-    - Перезагрузить компьютер
-    - После перезагрузки найти **Ubuntu** можно из **Главного меню** и запустить её как обычное приложение **Windows**
-    - Обновить **Ubuntu**: в терминале **Ubuntu** запустить команду `sudo apt list --upgradable -a && sudo apt update && sudo apt full-upgrade -y`
-    - Установить дополнительные утилиты в **Ubuntu**: в терминале **Ubuntu** запустить команду `sudo apt update && sudo apt install -y mc htop tree whois sl neofetch wget curl inxi ncdu micro xclip xsel cmatrix`
-    - Установить поддержку `g++` и `clang++` в терминале **Ubuntu**: `sudo apt update && sudo apt install -y build-essential git gdb ascii clang mingw-w64`
-    - Проверить работу **Ubuntu** командами:
-        - `uname -a` - краткая информация о системе
-        - `neofetch` - красивая информация о системе
-        - `htop` - процессы в режиме реального времени. Выйти по **Q** или **Ctrl+C**
-        - `sl`
-        - `ascii -d`
-        - `inxi -F`
-    - (Не обязательно!)Если обновления **Ubuntu** завершаться ошибкой, то надо в **Windows PowerShell** (Администратор) задать версию **WSL 2** по умолчанию: `wsl --set-default-version 2`
+    - (Не обязательно!) Установить **Ubuntu** `wsl --install`
+        - Когда система предложит указать имя пользователя **UNIX**, надо указать `user` и **Enter**
+        - Пароль польователя `user` - `123` (при наборе пароля он никак не отображается, но всё равно набирается) и **Enter**. Повтори пароль и **Enter**
+        - Перезагрузить компьютер
+            - После перезагрузки найти **Ubuntu** можно из **Главного меню** и запустить её как обычное приложение **Windows**
+            - Обновить **Ubuntu**: в терминале **Ubuntu** запустить команду `sudo apt list --upgradable -a && sudo apt update && sudo apt full-upgrade -y`
+            - Установить дополнительные утилиты в **Ubuntu**: в терминале **Ubuntu** запустить команду `sudo apt update && sudo apt install -y mc htop tree whois sl neofetch wget curl inxi ncdu micro xclip xsel cmatrix`
+            - Установить поддержку `g++` и `clang++` в терминале **Ubuntu**: `sudo apt update && sudo apt install -y build-essential git gdb ascii clang mingw-w64`
+            - Проверить работу **Ubuntu** командами:
+            - `uname -a` - краткая информация о системе
+            - `neofetch` - красивая информация о системе
+            - `htop` - процессы в режиме реального времени. Выйти по **Q** или **Ctrl+C**
+            - `sl`
+            - `ascii -d`
+            - `inxi -F`
+    - (Не обязательно!) Если обновления **Ubuntu** завершаться ошибкой, то надо в **Windows PowerShell** (Администратор) задать версию **WSL 2** по умолчанию: `wsl --set-default-version 2`
 
 > Если компьютер не тянет для **WSL 2.0** и **Docker**, то можно попробовать выполнять задачи в [**Codespace**](https://github.com/features/codespaces) (но не желательно, т.к. очень ограниченный функционал!)
 
 [Основные команды для WSL](https://learn.microsoft.com/ru-ru/windows/wsl/basic-commands)
+
+---
 
 ### Docker (Разработка, тестирование и запуск различного ПО)
 
@@ -136,59 +138,11 @@ git config --global user.email "rosa@mail.ru"
 
 [Уроки по **Docker** для начинающих](/content/Docker/README.md)
 
-### Virtual Box (Для организации контроллера домена) - пока не обязательно!
+---
 
-> В Windows вместо **Virtual Box** можно [использовать **Hyper V**](https://learn.microsoft.com/ru-ru/windows-server/virtualization/hyper-v/get-started/install-hyper-v?tabs=powershell&pivots=windows-server)
+### [Virtual Box (Для организации контроллера домена) - пока не обязательно!](/content/Linux/README.md)
 
-[Загрузить и установить **Virtual Box**](https://www.oracle.com/virtualization/virtualbox/) или в командой в **PowerShell** - `winget install --id=Oracle.VirtualBox -e`
-
-[Создание виртуальной машины в **Virtual Box 7.0** для установки **Альт Образование**](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
-
-[Установка **Альт Образование 10/11** без UEFI](https://rutube.ru/video/8e0549a3a10f8881efb4260c77f4973b/)
-
-[Загрузить **Альт Образование 11**](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
-
-После установки **Альт Образование 11** необходимо выполнить:
-
-Обновить ОС
-```shell
-epm ei --auto && epm full-upgrade -y
-```
-
-Установить дополнительные утилиты
-```shell
-epmi --auto newt52 lshw yt-dlp btop htop nvtop apt-repo apt-https NetworkManager-tui eget wget fd git ncdu micro xclip xsel mc tree glxgears glmark2 neofetch fastfetch whois curl inxi net-tools arp-scan aria2 alterator-grub sysctl-conf-userns cmatrix codetest_sl caca-utils asciiquarium
-```
-
-Установить средства разработки
-```shell
-epmi --auto valgrind rpm-build llvm-common-clang-tools clang-devel gcc-c++ cppcheck ghex cmake gdb ascii kdbg
-```
-
-Дальнейшее обновление ОС Альт Образование можной осуществлять командами:
-
-Открыть **Терминал** (консоль) по **Ctrl+Alt+T**
-
-Войти в консоль как **root** (повысить привилегии)
-```shell
-su-
-```
-
-```shell
-epm ei --auto && epm full-upgrade -y
-```
-
-Проверить систему **Альт Образование 11**
-
-```shell
-fastfetch
-```
-
-```shell
-inxi -F
-```
-
-> Если компьютер не тянет в **Virtual Box**, то можно пока ограничиться **WSL 2.0**!
+---
 
 ### Минимальные настройки `VSCode`
 
@@ -224,6 +178,8 @@ inxi -F
 
 [Подробней о настройках VSCode](https://gitflic.ru/project/rurewa/education/blob?file=content/Programming/VCode.md&branch=master&mode=markdown)
 
+---
+
 ### Рекомендуемые навыки и умения
 
 1. "Слепая печать" на стандартной клавиатуре
@@ -233,14 +189,12 @@ inxi -F
 1. Читать тематические группы в Телеграм
 1. Git+Markdown+Mermaid+Docker+CI/CD
 
+---
+
 ## Вопросы к экзамену
 
-[Вопросы к экзамену по дисциплине «ОСНОВЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ»](/content/Basics_database_design/questions.md)
-
-[Вопросы к экзамену по дисциплине «ПОДДЕРЖКА И ТЕСТИРОВАНИЕ ПРОГРАММНЫХ МОДУЛЕЙ»](/content/SupportAndTesting_of_software_modules/questions.md)
-
-[Вопросы к экзамену по дисциплине «ОБЕСПЕЧЕНИЕ КАЧЕСТВА ФУНКЦИОНИРОВАНИЯ КОМПЬЮТЕРНЫХ СИСТЕМ»](/content/Ensuring_quality_computer_systems_functioning/questions.md)
-
-[Вопросы к экзамену по дисциплине "Инструментальные средства разработки ПО"](/content/SoftwareDevelopmentTools/questions.md)
-
-[Вопросы к экзамену по дисциплине "Информационные технологии"](/content/IT/questions.md)
+* [Вопросы к экзамену по дисциплине «ОСНОВЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ»](/content/Basics_database_design/questions.md)
+* [Вопросы к экзамену по дисциплине «ПОДДЕРЖКА И ТЕСТИРОВАНИЕ ПРОГРАММНЫХ МОДУЛЕЙ»](/content/SupportAndTesting_of_software_modules/questions.md)
+* [Вопросы к экзамену по дисциплине «ОБЕСПЕЧЕНИЕ КАЧЕСТВА ФУНКЦИОНИРОВАНИЯ КОМПЬЮТЕРНЫХ СИСТЕМ»](/content/Ensuring_quality_computer_systems_functioning/questions.md)
+* [Вопросы к экзамену по дисциплине "Инструментальные средства разработки ПО"](/content/SoftwareDevelopmentTools/questions.md)
+* [Вопросы к экзамену по дисциплине "Информационные технологии"](/content/IT/questions.md)
