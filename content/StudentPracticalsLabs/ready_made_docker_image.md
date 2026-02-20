@@ -19,7 +19,7 @@
 
 #### 3. cAdvisor
 
-- Так же как 1-е задание, но с [cAdvisor](/content/Docker/ImageLibrary/cAdvisor.md)
+- Так же как предыдущее, но с [cAdvisor](/content/Docker/ImageLibrary/cAdvisor.md)
 
 #### 4. Speedtest
 
