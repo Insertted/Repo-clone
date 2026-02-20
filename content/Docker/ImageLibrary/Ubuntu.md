@@ -19,7 +19,7 @@ Run 'docker run --help' for more information
 
 Установите что-нибудь внутри
 ```shell
-apt update && apt install curl -y
+apt update && apt install neofetch
 ```
 ```shell
 curl --version
