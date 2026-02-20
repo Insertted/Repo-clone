@@ -23,20 +23,26 @@
 
 #### 4. Speedtest
 
-- Так же как 1-е задание, но с [speedtest](/content/Docker/ImageLibrary/speedtest.md)
+- Так же как предыдущее задание, но с [speedtest](/content/Docker/ImageLibrary/speedtest.md)
 
 #### 5. Ubuntu
 
-- Так же как 1-е задание, но с [Ubuntu](/content/Docker/ImageLibrary/Ubuntu.md)
+- Так же как предыдущее задание, но с [Ubuntu](/content/Docker/ImageLibrary/Ubuntu.md)
 
 #### 6. MySQL
 
-- Так же как 1-е задание, но с [MySQL](/content/Docker/ImageLibrary/MySQL.md)
+- Так же как предыдущее задание, но с [MySQL](/content/Docker/ImageLibrary/MySQL.md)
 
-#### 7.
+#### 7. PostgreSQL
 
-#### 8.
+- Так же как предыдущее задание, но с [PostgreSQL](/content/Docker/ImageLibrary/PostgreSQL.md)
 
-#### 9.
+#### 8. Portainer
+
+- Так же как предыдущее задание, но с [Portainer](/content/Docker/ImageLibrary/Portainer.md)
+
+#### 9. Python
+
+- Так же как предыдущее задание, но с [Python](/content/Docker/ImageLibrary/Python.md)
 
 #### 10.
