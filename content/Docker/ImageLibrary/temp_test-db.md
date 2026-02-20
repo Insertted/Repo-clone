@@ -1,6 +1,6 @@
 ## Временная база данных для тестов
 
-1. Запустить PostgreSQL для тестов
+- 1 - Запустить PostgreSQL для тестов
 ```shell
 docker run -d \
   --name test-db \
@@ -8,11 +8,11 @@ docker run -d \
   -e POSTGRES_PASSWORD=test123 \
   postgres:alpine
 ```
-2. Зайти в эту БД:
+- 2 - Зайти в эту БД:
 ```shell
 docker exec -it test-db psql -U postgres
 ```
-3. Выполнить несколько демонстрационных команд, например:
+- 3 - Выполнить несколько демонстрационных команд, например:
 Получить список баз данных:
 ```sql
 \l
@@ -25,7 +25,7 @@ SELECT version();
 ```sql
 exit
 ```
-4. После тестов удалить
+- 4 - После тестов удалить
 ```shell
 docker stop test-db && docker rm test-db
 ```
