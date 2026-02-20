@@ -14,3 +14,29 @@
 [Пример руководства по запустку контейнера с Nginx >>](https://github.com/rurewa/edu_dockers/blob/main/content/Nginx.md)
 
 #### 2. Welcome to Docker
+
+- Так же как 1-е задание, но с [Welcome to Docker](/content/Docker/ImageLibrary/WelcomeToDocker.md)
+
+#### 3. cAdvisor
+
+- Так же как 1-е задание, но с [cAdvisor](/content/Docker/ImageLibrary/cAdvisor.md)
+
+#### 4. Speedtest
+
+- Так же как 1-е задание, но с [speedtest](/content/Docker/ImageLibrary/speedtest.md)
+
+#### 5. Ubuntu
+
+- Так же как 1-е задание, но с [Ubuntu](/content/Docker/ImageLibrary/Ubuntu.md)
+
+#### 6. MySQL
+
+- Так же как 1-е задание, но с [MySQL](/content/Docker/ImageLibrary/MySQL.md)
+
+#### 7.
+
+#### 8.
+
+#### 9.
+
+#### 10.
