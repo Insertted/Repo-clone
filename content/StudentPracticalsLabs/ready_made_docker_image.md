@@ -17,6 +17,8 @@
 
 - Так же как 1-е задание, но с [Welcome to Docker](/content/Docker/ImageLibrary/WelcomeToDocker.md)
 
+> Внутри контейнера установка приложений типа `htop` отличается от контейнера с **Debian**. Подробности можно узнать у нейросети.
+
 #### 3. cAdvisor
 
 - Так же как предыдущее, но с [cAdvisor](/content/Docker/ImageLibrary/cAdvisor.md)
