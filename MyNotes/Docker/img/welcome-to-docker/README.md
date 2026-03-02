@@ -21,6 +21,9 @@ docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
 
 [Открыть http://localhost:8088 в браузере](http://localhost:8088)
 
+Скрин контейнера в браузере
+![скрин браузера](../image%20copy.png)
+
 Зайти в контейнер
 ```shell
 docker exec -it welcome-to-docker /bin/sh
