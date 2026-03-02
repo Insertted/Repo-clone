@@ -59,4 +59,4 @@ fastfetch
 exit
 ```
 
-Все скриншоты в папке [docker/image](MyNotes/Docker/img)
+Все скриншоты в папке docker/img
