@@ -73,6 +73,8 @@ docker search nginx
 
 ![Скрин вывода поиска по слову nginx](img/docker_screen.png)
 
+Так же готовый образ можно искать в **Docker Desktop**
+
 Получить, создать и запустить Nginx
 ```shell
 docker run -d --name my-nginx -p 80:80 nginx
