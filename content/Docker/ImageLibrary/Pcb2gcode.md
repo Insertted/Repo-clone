@@ -1,5 +1,8 @@
 ## Pcb2gcode web application wrapper
 
+> Никогда в разработке не используйте русские имена файлов и каталогов!
+> Никогда в разработке не используйте пробелы и спец.символы в именах файлов и каталогов!
+
 Allows users to create projects and add their gerber files to convert them to gcode.
 I use this project to engrave my PCB with my 3D printer equipped with a UV laser installed in the extrusion head.
 
