@@ -126,6 +126,9 @@ docker inspect nginx
 ```shell
 docker stop my-nginx
 ```
+
+Проверьте остановленное приложение в браузере по тому же адресу, обновив страницу по `Ctrl+R` или `F5`
+
 Перезапустить контейнер по имени
 ```shell
 docker restart my-nginx
