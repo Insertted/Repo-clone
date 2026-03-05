@@ -14,16 +14,6 @@
 mkdir -p ~/insolante_data
 ```
 
-Запускаем контейнер
-```shell
-docker run --rm -p 8081:5000 -d \
-  -e URL=http://localhost \
-  -e RPORT=8180 \
-  -e DEBUG=false \
-  -v ~/insolante_data:/opt/core/data \
-  ngargaud/insolante
-```
-
 ### Для Windows (PowerShell):
 
 Создаём папку (например, C:\insolante_data)
@@ -31,13 +21,13 @@ docker run --rm -p 8081:5000 -d \
 mkdir C:\insolante_data -Force
 ```
 
-Запускаем
+Загружаем образ, создаём и запускаем контейнер:
 ```shell
-docker run --rm -p 8080:5000 -d `
-  -e URL=http://localhost `
-  -e RPORT=8080 `
-  -e DEBUG=false `
-  -v C:\insolante_data:/opt/core/data `
+docker run --rm -p 8081:5000 -d \
+  -e URL=http://localhost \
+  -e RPORT=8180 \
+  -e DEBUG=false \
+  -v ~/insolante_data:/opt/core/data \
   ngargaud/insolante
 ```
 
