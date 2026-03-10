@@ -1,4 +1,4 @@
-## Dockerfile. Приложение на C# (.NET) с публикацией
+## Dockerfile. Приложение на C# (.NET)
 
 Пример для приложения **ASP.NET** Core из документации **Microsoft**
 
@@ -82,5 +82,10 @@ docker build -t myapp .
 ```shell
 docker run -d -p 8081:80 --name myapp myapp
 ```
+Описание команды:
+- `-d` — фоновый режим.
+- `-p` 8081:80 — порт хоста 8081 → порт контейнера 80.
+- `--name` myapp — имя контейнера.
+- `myapp` — имя образа.
 
 После запуска откройте браузер по адресу [http://localhost:8080](http://localhost:8080) — вы должны увидеть сообщение **Hello from Docker! Привет из Docker!**
