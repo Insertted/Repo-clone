@@ -10,7 +10,7 @@
 
 ### 1. Структура проекта
 
-Одной bash-командой создать всю структуру нового проекта:
+В каталоге для Docker-проектов создать одной bash-командой всю структуру для нового приложения:
 ```shell
 mkdir -p simple_flask_app && touch simple_flask_app/app.py simple_flask_app/requirements.txt simple_flask_app/Dockerfile
 ```
@@ -24,12 +24,12 @@ simple_flask_app/
 └── .dockerignore       # чтобы исключить ненужные файлы сборки
 ```
 
-### 2. Файл `requirements.txt`:
+### 2. Содержимое файла  `requirements.txt`:
 ```
 Flask==3.0.0
 ```
 
-### 3. Файл `Dockerfile`:
+### 3. Содержимое файла `Dockerfile`:
 ```dockerfile
 # Базовый образ – официальный легковесный Python
 FROM python:3.11-slim
@@ -47,7 +47,7 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-### 4. Файл `.dockerignore`
+### 4. Содержимое файла `.dockerignore`
 ```shell
 __pycache__
 *.pyc

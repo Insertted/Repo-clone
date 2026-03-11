@@ -10,6 +10,11 @@ my-website/
 └── index.html
 ```
 
+В каталоге для Docker-проектов создать одной bash-командой всю структуру для нового приложения:
+```shell
+mkdir -p my-website && touch my-website/Dockerfile my-website/index.html && cd my-website
+```
+
 index.html:
 ```html
 <!DOCTYPE html>

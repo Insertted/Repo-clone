@@ -14,12 +14,12 @@ MyApp/
 ├── .dockerignore
 ```
 
-Создать структуру проекта можно одной командой в **Bash**:
+В каталоге для Docker-проектов создать одной bash-командой всю структуру для нового приложения:
 ```shell
 mkdir -p MyApp && touch MyApp/Program.cs MyApp/ReservationSystem.csproj MyApp/Dockerfile MyApp/.dockerignore
 ```
 
-### 2. Файл `MyApp.csproj`
+### 2. Содержимое файла `MyApp.csproj`
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
@@ -36,7 +36,7 @@ mkdir -p MyApp && touch MyApp/Program.cs MyApp/ReservationSystem.csproj MyApp/Do
 - ImplicitUsings подключает часто используемые пространства имён автоматически.
 - Nullable включает поддержку nullable-типов.
 
-### 3. Файл `Program.cs`
+### 3. Содержимое файла `Program.cs`
 ```c#
 var app = WebApplication.Create(args);
 // Определяем маршрут для корневого URL
@@ -50,7 +50,7 @@ app.Run("http://*:80");
 - app.MapGet("/", ...) задаёт обработчик для корневого пути, возвращающий строку пHello from Docker! Привет из Docker!риветствия.
 - app.Run("http://*:80") заставляет приложение слушать порт 80 на всех сетевых интерфейсах (важно для работы внутри контейнера).
 
-### 4. `Dockerfile`:
+### 4. Содержимое файла `Dockerfile`:
 ```dockerfile
 # Используем SDK для сборки
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
