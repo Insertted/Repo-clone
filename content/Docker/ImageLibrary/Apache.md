@@ -29,6 +29,8 @@ apt update && apt install micro
 micro /usr/local/apache2/htdocs/index.html
 ```
 
+> Чтобы в веб-странице поддерживался русский язык, вставьте тэг `<meta charset="UTF-8">`
+
 отредайтируйте и сохраните по `Ctrl+S` и выйти из режима редактирования по `Ctrl+Q`
 
 Выйти из контейнера:
