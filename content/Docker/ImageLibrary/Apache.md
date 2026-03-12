@@ -14,10 +14,25 @@ docker run -d --name my-apache -p 8081:80 httpd
 
 ### Редактирование веб-страницы
 
+Зайти в контейнер
+```shell
+docker exec -it my-apache bash
+```
+
+Установить тектовый редактор командной строки Micro:
+```shell
+apt update && apt install micro
+```
+
 Открыть файл `index.html` для редактирования содержимого
 ```shell
 micro /usr/local/apache2/htdocs/index.html
 ```
 
 отредайтируйте и сохраните по `Ctrl+S` и выйти из режима редактирования по `Ctrl+Q`
+
+Выйти из контейнера:
+```shell
+exit
+```
 
