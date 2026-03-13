@@ -82,16 +82,7 @@ CMD ["./build/fltk_demo"]
 docker build -t fltk-demo .
 ```
 
-Создание и запуск контейнера в **Windows 10** (сборка 22000 и выше) или 11
-```shell
-docker run -it --rm \
-  -e DISPLAY=$DISPLAY \
-  -e WAYLAND_DISPLAY=$WAYLAND_DISPLAY \
-  -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
-  -v /tmp/.X11-unix:/tmp/.X11-unix \
-  -v /mnt/wslg:/mnt/wslg \
-  fltk-demo
-```
+Создание и запуск контейнера в **Windows 10** (сборка 22000 и выше) или 11 в **PowerShell**
 ```shell
 docker run -it --rm `
   -v /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix `
@@ -101,6 +92,7 @@ docker run -it --rm `
   -e XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir `
   fltk-demo
 ```
+
 Создание и запуск контейнера в **Linux**
 ```shell
 xhost +local:docker
