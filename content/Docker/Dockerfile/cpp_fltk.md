@@ -92,7 +92,15 @@ docker run -it --rm \
   -v /mnt/wslg:/mnt/wslg \
   fltk-demo
 ```
-
+```shell
+docker run -it --rm `
+  -v /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix `
+  -v /run/desktop/mnt/host/wslg:/mnt/wslg `
+  -e DISPLAY=:0 `
+  -e WAYLAND_DISPLAY=wayland-0 `
+  -e XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir `
+  fltk-demo
+```
 Создание и запуск контейнера в **Linux**
 ```shell
 xhost +local:docker
