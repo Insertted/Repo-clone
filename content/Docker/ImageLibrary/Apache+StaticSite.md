@@ -18,17 +18,22 @@ echo '<h1>Hello Docker!</h1>' > index.html
 
 > Чтобы в веб-странице поддерживался русский язык, вставьте тэг `<meta charset="UTF-8">`
 
-Запустите **Apache** с монтированием папки
+Запустите **Apache** с монтированием папки (для Linux)
 
 > Перед созданием проекта убедитесь, что порт `8081` не занят другим приложением!
 
-Находясь в папке проекта `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
+<u>Находясь в папке проекта</u> `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
 ```shell
 docker run -d \
   --name my-apache \
   -p 8081:80 \
   -v $(pwd):/usr/local/apache2/htdocs \
   httpd:alpine
+```
+
+Запустите **Apache** с монтированием папки (для Windows)
+```shell
+docker run -d --name my-apache -p 8081:80 -v "${PWD}:/usr/local/apache2/htdocs" httpd:alpine
 ```
 
 [Откройте: http://localhost:8081](http://localhost:8081)
