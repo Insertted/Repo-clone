@@ -19,7 +19,7 @@ docker run -d ^
   portainer/portainer-ce:latest
 ```
 
-в **Linux Linux/WSL 2.0**
+в **Linux/WSL 2.0**
 ```shell
 docker run -d \
   --name portainer \
