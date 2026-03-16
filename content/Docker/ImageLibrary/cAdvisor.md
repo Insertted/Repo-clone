@@ -38,7 +38,7 @@ docker run -d `
   lagoudocker/cadvisor:v0.37.0
 ```
 
-Загрузка, создание и запуск контейнера с **cAdvisor** в **Linux/WSL 2.0**:
+Загрузка, создание и запуск контейнера с **cAdvisor** в **LLinux/WSL 2.0/Mac**:
 ```shell
 docker run -d \
   --volume=/:/rootfs:ro \
