@@ -81,3 +81,13 @@ docker run -it --rm rust-app
 ```
 
 > Вы должны увидеть: Hello from Rust inside Docker! 🦀
+
+### 6 Зайти в контейнер
+
+```shell
+docker run -it --rm --entrypoint sh rust-app
+```
+Запустить программу на Rust:
+```shell
+./rust-app
+```
