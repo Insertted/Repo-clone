@@ -1,4 +1,4 @@
-## Моя коллекция готовых Docker-образов из разных хабов
+## Коллекция готовых Docker-образов из разных хабов
 
 1. [Docket Hub](/content/Docker/ImageLibrary/DockerHub.md)
 1. [Веб-сервер Nginx](/content/Docker/ImageLibrary/Nginx.md)

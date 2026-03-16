@@ -2,6 +2,7 @@
 
 - [Привет, Docker! 🐳](/content/Docker/Dockerfile/hello-world.md)
 - [Статический сайт на веб-сервере Nginx](/content/Docker/Dockerfile/my-site.md)
+- [Простое приложение на Python]()
 - [Flask+Python (мини-проект)](/content/Docker/Dockerfile/Flask+Python_Mini.md)
 - [Приложение на C# (.NET) с публикацией](/content/Docker/Dockerfile/dotNet.md)
 - [Консольное приложение на C++](/content/Docker/Dockerfile/cpp.md)
@@ -11,3 +12,7 @@
 - [Приложение на Rust](/content/Docker/Dockerfile/Rust.md)
 - [Приложение на Ruby](/content/Docker/Dockerfile/Ruby.md)
 - [Приложение на PHP](/content/Docker/Dockerfile/php.md)
+- [NodeJS]()
+- [TypeScript]()
+- [Pascal]()
+- [Qt+C++]()
