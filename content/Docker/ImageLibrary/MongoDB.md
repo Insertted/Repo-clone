@@ -15,7 +15,7 @@ docker run -d ^
   mongo:latest
 ```
 
-в **Linux Linux/WSL 2.0**
+в **Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-mongo \

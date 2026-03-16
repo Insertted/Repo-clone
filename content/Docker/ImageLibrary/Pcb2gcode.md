@@ -34,7 +34,7 @@ docker run --rm -p 8081:5000 -d ^
   ngargaud/insolante
 ```
 
-в **Linux Linux/WSL 2.0**
+в **Linux/WSL 2.0/Mac**
 ```shell
 docker run --rm -p 8081:5000 -d \
   -e URL=http://localhost \
