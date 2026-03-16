@@ -9,6 +9,16 @@
 
 > Перед созданием проекта убедитесь, что порт 8084 не занят другим приложением!
 
+
+Запустите **Adminer** в **Windows**
+```shell
+docker run -d ^
+  --name adminer ^
+  -p 8084:8080 ^
+  adminer:latest
+```
+
+Запустите **Adminer** в **Linux Linux/WSL 2.0**
 ```shell
 docker run -d \
   --name adminer \

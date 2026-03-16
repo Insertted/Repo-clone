@@ -4,6 +4,16 @@
 > Никогда в разработке не используйте пробелы и спец.символы в именах файлов и каталогов!
 
 1. Запустить Squid proxy
+
+в **Windows**
+```shell
+docker run -d ^
+  --name squid-proxy ^
+  -p 3128:3128 ^
+  ubuntu/squid:latest
+```
+
+в **Linux Linux/WSL 2.0**
 ```shell
 docker run -d \
   --name squid-proxy \

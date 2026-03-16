@@ -23,6 +23,18 @@ mkdir C:\insolante_data -Force
 ```
 
 Загружаем образ, создаём и запускаем контейнер:
+
+в **Windows**
+```shell
+docker run --rm -p 8081:5000 -d ^
+  -e URL=http://localhost ^
+  -e RPORT=8180 ^
+  -e DEBUG=false ^
+  -v ~/insolante_data:/opt/core/data ^
+  ngargaud/insolante
+```
+
+в **Linux Linux/WSL 2.0**
 ```shell
 docker run --rm -p 8081:5000 -d \
   -e URL=http://localhost \

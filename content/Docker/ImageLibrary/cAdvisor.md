@@ -23,7 +23,7 @@ netstat -tuln | grep :8082
 netstat -aon | findstr :8082
 ```
 
-Загрузка, создание и запуск контейнера с cAdvisor в Windows:
+Загрузка, создание и запуск контейнера с **cAdvisor** в **Windows**:
 ```shell
 docker run -d `
   --volume=/:/rootfs:ro `
@@ -38,7 +38,7 @@ docker run -d `
   lagoudocker/cadvisor:v0.37.0
 ```
 
-Загрузка, создание и запуск контейнера с cAdvisor в Linux/WSL 2.0:
+Загрузка, создание и запуск контейнера с **cAdvisor** в **Linux/WSL 2.0**:
 ```shell
 docker run -d \
   --volume=/:/rootfs:ro \
