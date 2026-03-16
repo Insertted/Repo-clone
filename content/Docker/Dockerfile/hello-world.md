@@ -17,7 +17,7 @@ FROM alpine:latest
 CMD ["echo", "Привет, Docker! 🐳"]
 ```
 
-Сборка
+В командной строке, находясь в папке `hello-world`, выполнить:
 ```shell
 docker build -t hello-world .
 ```

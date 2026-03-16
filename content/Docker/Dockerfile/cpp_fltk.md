@@ -77,7 +77,7 @@ CMD ["./build/fltk_demo"]
 
 ### 5. Сборка и запуск
 
-Сборка образа
+В командной строке, находясь в папке `cpp-fltk`, выполнить:
 ```shell
 docker build -t fltk-demo .
 ```
