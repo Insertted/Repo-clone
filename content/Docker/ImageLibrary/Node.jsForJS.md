@@ -10,10 +10,17 @@
 docker run -it --rm node:alpine node
 ```
 
-Или запустить скрипт
+И запустить скрипт
 ```shell
-echo "console.log('Hello Node!')" > app.js
+console.log('Hello from Docker!');
 ```
+
+Для выхода из консоли
 ```shell
-docker run --rm -v $(pwd):/app node:alpine node /app/app.js
+.exit
+```
+
+или
+```shell
+docker run --rm node:alpine node -e "console.log('Hello')"
 ```
