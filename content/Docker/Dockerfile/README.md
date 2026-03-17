@@ -12,7 +12,7 @@
 - [Приложение на Rust](/content/Docker/Dockerfile/Rust.md)
 - [Приложение на Ruby](/content/Docker/Dockerfile/Ruby.md)
 - [Приложение на PHP](/content/Docker/Dockerfile/php.md)
-- [NodeJS](/content/Docker/Dockerfile/Node_js.md)
+- [Node.JS](/content/Docker/Dockerfile/Node_js.md)
 - [Приложение на TypeScript](/content/Docker/Dockerfile/TypeScript.md)
 - [Pascal](/content/Docker/Dockerfile/Pascal.md)
 - [Qt+C++]()
