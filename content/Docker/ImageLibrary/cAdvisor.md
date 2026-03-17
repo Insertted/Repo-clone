@@ -54,3 +54,4 @@ docker run -d \
   lagoudocker/cadvisor:v0.37.0
 ```
 2. [Откройте: http://localhost:8082](http://localhost:8082)
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

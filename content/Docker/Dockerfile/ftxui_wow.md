@@ -120,3 +120,5 @@ docker run -it --entrypoint bash ftxui-wow
 ```shell
 exit
 ```
+
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

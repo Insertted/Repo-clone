@@ -91,3 +91,4 @@ docker run -it --rm --entrypoint sh rust-app
 ```shell
 ./rust-app
 ```
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

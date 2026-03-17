@@ -16,3 +16,5 @@
 - [Приложение на TypeScript](/content/Docker/Dockerfile/TypeScript.md)
 - [Pascal](/content/Docker/Dockerfile/Pascal.md)
 - [Qt+C++]()
+
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

@@ -394,3 +394,5 @@ sudo shutdown -p now
 sudo systemctl poweroff
 ```
 
+
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

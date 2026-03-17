@@ -9,3 +9,4 @@ docker run -d -p 158:80 --name speedtest-server adolfintel/speedtest
 ```
 
 [Открыть в браузере http://localhost:158/](http://localhost:158/)
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

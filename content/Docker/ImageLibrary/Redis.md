@@ -14,3 +14,4 @@ docker exec -it my-redis redis-cli
 ```
 
 Внутри Redis: ping → PONG, SET key value, GET key - ?
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

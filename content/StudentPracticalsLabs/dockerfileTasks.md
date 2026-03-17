@@ -14,3 +14,4 @@
 1. [Консольное приложение на C++ и FTXUI](/content/Docker/Dockerfile/ftxui.md)
 1. [Wow - консольное псевдографическое приложение на C++ и FTXUI](/content/Docker/DockerFile/ftxui_wow.md)
 1. [Приложение на C++ и FLTK](/content/Docker/Dockerfile/cpp_fltk.md)
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

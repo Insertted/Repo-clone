@@ -110,3 +110,5 @@ docker run -it --entrypoint bash fltk-demo
 ```shell
 exit
 ```
+
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!

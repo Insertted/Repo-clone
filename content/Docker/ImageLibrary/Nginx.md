@@ -365,3 +365,4 @@ docker container prune $(docker ps -q)
 ```shell
 docker rmi $(docker images -q)
 ```
+> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
