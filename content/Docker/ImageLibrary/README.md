@@ -23,3 +23,5 @@
 1. [Jira](/content/Docker/ImageLibrary/Jira.md)
 1. [Pcb2gcode](/content/Docker/ImageLibrary/Pcb2gcode.md)
 > Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!

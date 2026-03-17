@@ -14,3 +14,5 @@
 - [Скрипт синхронизации репозиториев](/content/StudentPracticalsLabs/scriptSyncRep.md)
 - [Скрипт обновления установленных приложений Windows, Linux и Mac](/content/StudentPracticalsLabs/upgradeAlApps.md)
 > Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!

@@ -18,3 +18,5 @@ docker run --rm -v $(pwd):/app python:alpine python /app/script.py
 docker run -it --rm python:alpine python
 ```
 > Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!

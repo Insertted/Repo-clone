@@ -40,3 +40,5 @@ exit
 
 [Docker Alt Linux Image](https://github.com/sibsau/docker-alt/blob/master/README.md)
 > Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
