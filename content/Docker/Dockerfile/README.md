@@ -15,6 +15,7 @@
 - [Node.JS](/content/Docker/Dockerfile/Node_js.md)
 - [Приложение на TypeScript](/content/Docker/Dockerfile/TypeScript.md)
 - [Pascal](/content/Docker/Dockerfile/Pascal.md)
-- [Qt/C++]()
+- [Qt5/C++](/content/Docker/Dockerfile/cppQt5.md)
+- [Qt6/C++]()
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
