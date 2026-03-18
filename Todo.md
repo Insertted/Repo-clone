@@ -114,11 +114,7 @@
         - CI/CD
         - Тестирование
     - Docker Compose
-        - PostgreSQL+pgAdmin
-        - mySQLphpMyAdmin
-        - drawdb
-        - Joomla
-        - Alt Linuxислать ссылку
+        -
 
 Отличники:
 

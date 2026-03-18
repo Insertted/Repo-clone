@@ -80,6 +80,7 @@ git config --global user.name "Rosa"
 git config --global user.email "rosa@mail.ru"
 ```
 > где вместо `rosa@mail.ru` - ваша почта
+
 ### [Подробней о Git >>>](/content/Git/README.md)
 
 
