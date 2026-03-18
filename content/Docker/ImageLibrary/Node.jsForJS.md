@@ -24,6 +24,5 @@ console.log('Hello from Docker!');
 ```shell
 docker run --rm node:alpine node -e "console.log('Hello')"
 ```
-> Если вы обраружили ошибку в этом тексте - сообщите пожалуйста автору!
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
