@@ -116,7 +116,7 @@ git config --global user.email "rosa@mail.ru"
             - `sl`
             - `ascii -d`
             - `inxi -F`
-    - (Не обязательно!) Если обновления **Ubuntu** завершаться ошибкой, то надо в **Windows PowerShell** (Администратор) задать версию **WSL 2** по умолчанию: `wsl --set-default-version 2`
+    - **(Не обязательно!)** Если обновления **Ubuntu** завершаться ошибкой, то надо в **Windows PowerShell** (Администратор) задать версию **WSL 2** по умолчанию: `wsl --set-default-version 2`
 
 > Если компьютер не тянет для **WSL 2.0** и **Docker**, то можно попробовать выполнять задачи в [**Codespace**](https://github.com/features/codespaces) (но не желательно, т.к. очень ограниченный функционал!)
 
@@ -136,7 +136,9 @@ git config --global user.email "rosa@mail.ru"
 
 > Если компьютер не тянет в **WSL 2.0** и **Docker**, то можно ограничется [Codespace](https://github.com/features/codespaces) (но не желательно, т.к. очень ограниченный функционал!)
 
-[Уроки по **Docker** для начинающих](/content/Docker/README.md)
+> Для лучшего выполнения создания и запуска контейнеров можно использовать установленную в **WSL** систему **Ubuntu**, которую можно вызвать из **Главного меню**. Чтобы **VS Code** мог работать с **Ubuntu**, нужно в нём установить расширение **WSL** и запускать **VS Code** из командной строки **Ubuntu** командой `.code`
+
+[Образовательные материалы по **Docker** для начинающих](/content/Docker/README.md)
 
 ---
 
@@ -173,6 +175,7 @@ git config --global user.email "rosa@mail.ru"
 - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
   **Markdown Syntax Highlighting** - подсветка синтаксиса в **Mermaid**
 - [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
+- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
 Открыть и закрыть встроенный в **VS Code** терминал по **Ctrl+~**
 
