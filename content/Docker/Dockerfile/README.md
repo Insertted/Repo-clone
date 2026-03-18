@@ -16,6 +16,6 @@
 - [Приложение на TypeScript](/content/Docker/Dockerfile/TypeScript.md)
 - [Pascal](/content/Docker/Dockerfile/Pascal.md)
 - [Qt5/C++](/content/Docker/Dockerfile/cppQt5.md)
-- [Qt6/C++]()
+- [Qt6/C++](/content/Docker/Dockerfile/cppQt6.md)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
