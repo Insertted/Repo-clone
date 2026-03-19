@@ -1,6 +1,11 @@
-##  Qt 5/C++ приложение 
+##  Qt 5/C++ приложение
 
-**Qt** — это кросс‑платформенный фреймворк для разработки программного обеспечения на языке **C++**.
+**Qt** — это кросс‑платформенный фреймворк для разработки программного обеспечения на языке **C++/QML/Python**.
+
+- Выполнять это задание следует в **WSL** (вызвать Ubuntu из Главного меню)
+- Если **WSL/Ubuntu** не установлен, установите по инструкции в главном [README.md - WSL 2.0](/README.md)
+- Кроме **WSL/Ubuntu** в ваш **VS Code** надо установить расширение **WSL** по инструкции в главном [README.md - Минимальные настройки `VSCode`](/README.md)
+- После установки расширенимя **WSL** в **VS Code**, вам необходимо закрыть его и открыть **VS Code** в **WSL/Ubuntu** командой `code .`
 
 ### 1. Структура проекта
 ```
@@ -11,7 +16,7 @@ qt-docker-app/
 └── run.sh
 ```
 
-В каталоге для Docker-проектов создать одной bash-командой всю структуру для нового приложения:
+В **WSL/Ubuntu** создать одной bash-командой всю структуру для нового приложения:
 ```shell
 mkdir -p qt-docker-app && touch qt-docker-app/Dockerfile qt-docker-app/main.cpp qt-docker-app/CMakeLists.txt qt-docker-app/run.sh && cd qt-docker-app
 ```
@@ -87,9 +92,7 @@ int main(int argc, char *argv[])
 ### 5. Содержимое файла `run.sh` для Linux/WSL
 ```bash
 #!/bin/bash
-
 xhost +local:docker
-
 docker run --rm -it \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
@@ -104,21 +107,6 @@ docker run --rm -it \
 docker build -t qt-docker-app .
 ```
 
-Создание и запуск контейнера для **Windows/WSLg** (ещё не проверял!)
-
-Открывайте терминал Ubuntu (или другой дистрибутив WSL), а не PowerShell или CMD
-```shell
-docker run --rm -it \
-  -e DISPLAY=$DISPLAY \
-  -e QT_X11_NO_MITSHM=1 \
-  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-  -u $(id -u):$(id -g) \
-  --device /dev/dri \
-  --group-add video \
-  --security-opt seccomp=unconfined \
-  qt-docker-app
-```
-
 Создание и запуск контейнера для **Linux/WSL**
 ```shell
 chmod +x run.sh
@@ -128,7 +116,7 @@ chmod +x run.sh
 ./run.sh
 ```
 
-Создание и запуск контейнера для **macOS**
+Создание и запуск контейнера для **macOS** (как в обычном Linux?)
 ```shell
 
 ```
