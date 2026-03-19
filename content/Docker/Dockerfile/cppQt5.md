@@ -1,4 +1,4 @@
-##  Qt 5/C++ приложение (в Linix - Ok, в винде пока не получается)
+##  Qt 5/C++ приложение 
 
 **Qt** — это кросс‑платформенный фреймворк для разработки программного обеспечения на языке **C++**.
 
@@ -94,12 +94,7 @@ docker run --rm -it \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-  --device /dev/dri \
-  --group-add video \
-  --security-opt seccomp=unconfined \
   qt-docker-app
-
-xhost -local:docker
 ```
 
 ### 6. Сборка и запуск
