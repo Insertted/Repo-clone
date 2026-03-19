@@ -107,7 +107,7 @@ docker run --rm -it \
 docker build -t qt-docker-app .
 ```
 
-Создание и запуск контейнера для **Linux/WSL**
+Создание и запуск контейнера для **Linux/WSL (терминал Ubutnu)**
 ```shell
 chmod +x run.sh
 ```
