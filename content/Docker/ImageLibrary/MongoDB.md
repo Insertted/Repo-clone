@@ -10,13 +10,13 @@
 
 в **Windows Powershell**
 ```shell
-docker run -d ^
-  --name my-mongo ^
-  -p 27017:27017 ^
+docker run -d `
+  --name my-mongo `
+  -p 27017:27017 `
   mongo:latest
 ```
 
-в **Linux/WSL 2.0/Mac**
+в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-mongo \

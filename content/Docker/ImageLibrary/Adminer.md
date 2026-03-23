@@ -13,13 +13,13 @@
 
 Запустите **Adminer** в **Windows Powershell**
 ```shell
-docker run -d ^
-  --name adminer ^
-  -p 8084:8080 ^
+docker run -d `
+  --name adminer `
+  -p 8084:8080 `
   adminer:latest
 ```
 
-Запустите **Adminer** в **Linux/WSL 2.0/Mac**
+Запустите **Adminer** в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name adminer \

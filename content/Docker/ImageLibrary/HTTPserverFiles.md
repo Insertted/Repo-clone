@@ -14,14 +14,14 @@ echo "Hello from HTTP server" > test.txt
 
 в **Windows Powershell**
 ```shell
-docker run -d ^
-  --name http-server ^
-  -p 8082:80 ^
-  -v $(pwd):/usr/share/nginx/html ^
+docker run -d `
+  --name http-server `
+  -p 8082:80 `
+  -v $(pwd):/usr/share/nginx/html `
   nginx:alpine
 ```
 
-в **Linux/WSL 2.0/Mac**
+в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name http-server \

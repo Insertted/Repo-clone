@@ -10,14 +10,14 @@
 
 в **Windows Powershell**
 ```shell
-docker run -d ^
-  --name my-postgres ^
-  -p 5432:5432 ^
-  -e POSTGRES_PASSWORD=mysecretpassword ^
+docker run -d `
+  --name my-postgres `
+  -p 5432:5432 `
+  -e POSTGRES_PASSWORD=mysecretpassword `
   postgres:alpine
 ```
 
-в **Linux/WSL 2.0/Mac**
+в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-postgres \
