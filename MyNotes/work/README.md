@@ -17,7 +17,6 @@
 1. [Adminer](./Adminer/README.md)
 1. [Redis](./Redis/README.md)
 1. [Pcb2gcode](/content/Docker/ImageLibrary/Pcb2gcode.md)
-1. [Статический сайт на Apache](/content/Docker/ImageLibrary/Apache+StaticSite.md)
 1. [Ubuntu](/content/Docker/ImageLibrary/Ubuntu.md)
 1. [Alt Linux в Docker](./alt/README.md)
 1. [Jira](./Jira/README.md)
