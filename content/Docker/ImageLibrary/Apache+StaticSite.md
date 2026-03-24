@@ -34,10 +34,10 @@ echo '<h1>Hello Docker!</h1>' > index.html
 
 для **Windows Powershell** (не сработал)
 ```shell
-docker run -d `
-  --name my-apache `
-  -p 8081:80 `
-  -v $(pwd):/usr/local/apache2/htdocs `
+docker run -d
+  --name my-apache
+  -p 8081:80
+  -v $(pwd):/usr/local/apache2/htdocs
   httpd:alpine
 ```
 
@@ -52,5 +52,7 @@ docker run -d \
 ```
 
 [Откройте: http://localhost:8081](http://localhost:8081)
+
+Для изменения содержимого `index.html` выполните его редайтирование в **VS Code** из папки `my-site` на вашем компьютере (не внутри контейнера!)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
