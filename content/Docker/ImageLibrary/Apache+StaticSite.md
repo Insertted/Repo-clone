@@ -1,4 +1,4 @@
-## Статический сайт на Apache
+## Статический сайт на Apache (пока не работает одключение тома)
 
 Выполните все этапы работы с проектом по примеру с [Nginx](/content/Docker/ImageLibrary/Nginx.md)
 
@@ -23,13 +23,8 @@ echo '<h1>Hello Docker!</h1>' > index.html
 
 Настройки Docker Desktop в Windows
 - Откройте `Docker Desktop → Settings → Resources → File Sharing`;
-- Убедитесь, что диск `C:` есть в списке. Если нет – добавьте его;
+- Убедитесь, что диск `C:\` есть в списке. Если нет – добавьте его;
 - Перезапустить компьютер.
-
-<u>Находясь в папке проекта</u> `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
-```shell
-docker run -d --name my-apache -p 8081:80 -v "${PWD}:/usr/local/apache2/htdocs" httpd:alpine
-```
 
 #### Запустите **Apache** с монтированием папки ()
 
@@ -37,13 +32,12 @@ docker run -d --name my-apache -p 8081:80 -v "${PWD}:/usr/local/apache2/htdocs" 
 
 <u>Находясь в папке проекта</u> `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
 
-
-для **Windows Powershell**
+для **Windows Powershell** (не сработал)
 ```shell
-docker run -d ^
-  --name my-apache ^
-  -p 8081:80 ^
-  -v $(pwd):/usr/local/apache2/htdocs ^
+docker run -d `
+  --name my-apache `
+  -p 8081:80 `
+  -v $(pwd):/usr/local/apache2/htdocs `
   httpd:alpine
 ```
 
