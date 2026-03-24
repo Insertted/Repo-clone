@@ -32,7 +32,7 @@ echo '<h1>Hello Docker!</h1>' > index.html
 
 <u>Находясь в папке проекта</u> `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
 
-для **Windows Powershell** (не сработал)
+для **Windows Powershell**
 ```shell
 docker run -d
   --name my-apache
