@@ -38,7 +38,7 @@ docker run -d --name my-apache -p 8081:80 -v "${PWD}:/usr/local/apache2/htdocs" 
 <u>Находясь в папке проекта</u> `my-site`, выполните загрузку образа, создание контейнера с сервером и его запуск:
 
 
-для **Windows  Powershell**
+для **Windows Powershell**
 ```shell
 docker run -d ^
   --name my-apache ^
@@ -48,7 +48,7 @@ docker run -d ^
 ```
 
 
-для **Linux/WSL 2.0/Mac**
+для **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-apache \

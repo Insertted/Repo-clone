@@ -10,7 +10,7 @@
 
 ### Создаём папку для данных (если её нет)
 
-#### Для Linux/macOS:
+#### Для Git-Bash/Linux/macOS:
 
 ```shell
 mkdir -p ~/insolante_data

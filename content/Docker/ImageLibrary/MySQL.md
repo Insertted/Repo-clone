@@ -31,6 +31,7 @@ docker run -d \
   -e MYSQL_PASSWORD=password \
   mysql:8
 ```
+
 2. Подключиться
 ```shell
 docker exec -it my-mysql mysql -u root -p
