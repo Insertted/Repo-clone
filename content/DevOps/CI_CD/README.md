@@ -1,3 +1,4 @@
-## Примеры Pipeline-ов
+## Примеры Pipeline-ов CI/CD в GitHub Actions
 
-- [Первый Pipeline на CI/CD в GitHub Actions](/content/DevOps/CI_CD/hello.md)
+- [Первый Pipeline](/content/DevOps/CI_CD/Pipelines/hello.md)
+- [Пайплайн для Python]()

@@ -12,3 +12,9 @@
 #### Pipeline-ы
 
 - [Pipeline-ы](/content/DevOps/CI_CD/README.md)
+
+### Информация
+
+- [DevOps](/content/DevOps/DevOps.md)
+- [CI_CD](/content/DevOps/CI_CD.md)
+- []()
