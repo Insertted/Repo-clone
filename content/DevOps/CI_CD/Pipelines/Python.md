@@ -4,7 +4,7 @@
 
 **Цель** — создать учебный пример **CI/CD** для простого **Python**-приложения
 
-### 1. Создайте на **GitHub** новый публичный репозиторий `my-python-app` с README.md
+### 1. Создайте на **GitHub** новый публичный репозиторий `my-python-app` с `README.md`
 
     Склонируйте его себе, откройте в **VS Code**, и в интегрированной терминале **VS Code** создайте такую структуру будущего проекта:
 
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### 3. Файл `setup.py`
+### 3. Файл `setup.py` для включения development mode
 ```python
 # setup.py
 from setuptools import setup, find_packages
@@ -164,5 +164,9 @@ docker run --rm my-python-app:test
 ```
 
 Вы увидите вывод: `Hello from my Python app!`
+
+![Hello from my Python app!](/content/DevOps/CI_CD/img/2_workflow.png)
+
+> Опционально вы может зайти в созданный вами контейнер для ознакомления
 
 
