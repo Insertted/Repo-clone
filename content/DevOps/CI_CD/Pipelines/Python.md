@@ -1,30 +1,32 @@
 ## Pipeline CI/CD на Python в GitHub Actions
 
-**Цель** — создать учебный пример **CI/CD** для простого Python-приложения
+> Пока CI, без CD...
+
+**Цель** — создать учебный пример **CI/CD** для простого **Python**-приложения
 
 ### 1. Создайте на **GitHub** новый публичный репозиторий `my-python-app` с README.md
 
-    Склонируйте его себе, откройте в VS Code, и в интегрированной терминале VS Code создайте такую структуру будущего проекта:
+    Склонируйте его себе, откройте в **VS Code**, и в интегрированной терминале **VS Code** создайте такую структуру будущего проекта:
 
 Структура проекта
 ```
-my-python-app/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml               # GitHub Actions workflow
+│       └── ci.yml # GitHub Actions workflow
 ├── myapp/
-│   ├── __init__.py
-│   └── app.py                   # основной код
+│   ├── __init__.py # пустой файл
+│   └── app.py # основной код
 ├── tests/
-│   └── test_app.py              # тесты (pytest)
-├── requirements.txt             # зависимости
-├── Dockerfile                   # для сборки образа
-└── README.md                    # описание (опционально)
+│   └── test_app.py # тесты (pytest)
+├── requirements.txt # зависимости
+├── setup.py
+├── Dockerfile # для сборки образа
+└── README.md # описание проекта
 ```
 
 Это можно сделать одной bash-командой, которая автоматически создаст всю структуру проекта:
 ```shell
-mkdir -p my-python-app/{.github/workflows,myapp,tests} && touch my-python-app/{.github/workflows/ci.yml,myapp/{__init__.py,app.py},tests/test_app.py,requirements.txt,Dockerfile,README.md}
+mkdir -p .github/workflows myapp tests && touch .github/workflows/ci.yml myapp/{__init__.py,app.py} tests/test_app.py setup.py requirements.txt Dockerfile README.md
 ```
 
 ### 2. Файл `myapp/app.py`
@@ -40,7 +42,18 @@ if __name__ == "__main__":
     main()
 ```
 
-### 3. Файл `tests/test_app.py`
+### 3. Файл `setup.py`
+```python
+# setup.py
+from setuptools import setup, find_packages
+
+setup(
+    name="my-python-app",
+    packages=find_packages(),
+)
+```
+
+### 4. Файл `tests/test_app.py`
 ```python
 from myapp.app import add
 
@@ -50,13 +63,13 @@ def test_add():
     assert add(0, 0) == 0
 ```
 
-### 4. Файл `requirements.txt`
+### 5. Файл `requirements.txt`
 ```
 pytest
 flake8
 ```
 
-### 5. Файл `Dockerfile`
+### 6. Файл `Dockerfile`
 ```dockerfile
 # Используем официальный образ Python
 FROM python:3.11-slim
@@ -72,7 +85,7 @@ COPY . .
 CMD ["python", "myapp/app.py"]
 ```
 
-### 6. Файл `.github/workflows/ci.yml`
+### 7. Файл `.github/workflows/ci.yml`
 ```yaml
 name: CI for Python App
 
@@ -130,8 +143,26 @@ jobs:
         run: docker build -t my-python-app:test .
 ```
 
-### 7. Закоммитьте и запушите в ветку `main` этот файл в ваш репозиторий
+### 8. Проверить сборку онлайн
 
-Перейдите на вкладку **Actions** в вашем репозитории на **GitHub**. Вы увидите, как ваш **Workflow** запустился, а через минуту загорится **зеленая** галочка, которая означает, что все шаги прошли успешно
+- Закоммитьте и запушите в ветку `main` этот файл в ваш репозиторий
+- Перейдите на вкладку **Actions** в вашем репозитории на **GitHub**. Вы увидите, как ваш **Workflow** запустился, а через минуту загорится **зеленая** галочка, которая означает, что все шаги прошли успешно
 
-![Скрин](/content/DevOps/CI_CD/img)
+![Скрин](/content/DevOps/CI_CD/img/1_workflow.png)
+
+### 9. Проверить сборку локально
+
+На своём компьютере, находясь в папке репозитория `my-python-app` выполнить:
+
+Сборка проекта в Docker-образ
+```shell
+docker build -t my-python-app:test .
+```
+Создание и запуск контейнера:
+```shell
+docker run --rm my-python-app:test
+```
+
+Вы увидите вывод: `Hello from my Python app!`
+
+
