@@ -69,9 +69,10 @@
         - Самостоятельные работы по готовым Docker-образам
     - Dockerfile
         - Привет, Docker!
-        - Самостоятельные работы по сборке Docker-образов
+        - Самостоятельные работы по сборке образов из Dockerfile
         - CI/CD
-        - Тестирование
+            - Первый CI Pipeline
+            - CI Pipeline для Python
     - Docker Compose
         -
 ```
