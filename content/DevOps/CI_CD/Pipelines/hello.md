@@ -1,4 +1,4 @@
-## Первый Pipeline на CI/CD в GitHub Actions
+## Первый Pipeline на CI в GitHub Actions
 
 **Цель** — просто заставить систему **GitHub Actions** работать!
 
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4 # Шаг 1: скачать код из репозитория
       - name: Запустить команду
-        run: echo "Привет, мир! Я только что запустил CI/CD!"
+        run: echo "Привет, мир! Я только что запустил CI!"
 ```
 
 ### 3. Проверить онлайн
