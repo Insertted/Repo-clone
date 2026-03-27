@@ -1,12 +1,10 @@
 ## Pipeline CI/CD на Python в GitHub Actions
 
-> Пока CI, без CD...
-
 **Цель** — создать учебный пример **CI/CD** для простого **Python**-приложения
 
 ### 1. Создайте на **GitHub** новый публичный репозиторий `my-python-app` с `README.md`
 
-    Склонируйте его себе, откройте в **VS Code**, и в интегрированной терминале **VS Code** создайте такую структуру будущего проекта:
+    Склонируйте его себе, откройте в VS Code, и в интегрированном терминале VS Code создайте такую структуру будущего проекта:
 
 Структура проекта
 ```
@@ -119,11 +117,12 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      - name: Install package in development mode
+        run: pip install -e .
+
       - name: Lint with flake8
         run: |
-          # Остановка при критических ошибках
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-          # Предупреждения о стиле (не прерывают выполнение)
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Test with pytest
@@ -132,7 +131,7 @@ jobs:
   docker-build:
     name: Build Docker Image (no push)
     runs-on: ubuntu-latest
-    needs: test                 # ждём успешного завершения тестов
+    needs: test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
@@ -167,6 +166,11 @@ docker run --rm my-python-app:test
 
 ![Hello from my Python app!](/content/DevOps/CI_CD/img/2_workflow.png)
 
-> Опционально вы может зайти в созданный вами контейнер для ознакомления
+Опционально вы можете зайти в созданный вами контейнер для ознакомления
+```shell
+docker run --rm -it my-python-app:test /bin/bash
+```
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
 
 
