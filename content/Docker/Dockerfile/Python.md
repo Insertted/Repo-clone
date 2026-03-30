@@ -31,7 +31,7 @@ print("Hello from Python in Docker! 🐍")
 
 ### 4. Сборка и запуск
 
-В командной строке, находясь в папке `rust-docker`, выполнить:
+В командной строке, находясь в папке `my-python-app`, выполнить:
 ```shell
 docker build -t my-python-app .
 ```
