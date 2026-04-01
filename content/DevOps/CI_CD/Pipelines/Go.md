@@ -13,7 +13,6 @@ my-go-app/
 ├── main.go
 ├── sum.go
 ├── sum_test.go
-├── go.mod
 ├── Dockerfile
 └── README.md
 ```
@@ -23,7 +22,7 @@ my-go-app/
 mkdir -p .github/workflows && \
 touch .github/workflows/ci.yml \
       main.go sum.go sum_test.go \
-      go.mod Dockerfile README.md
+      Dockerfile README.md
 ```
 
 ### 2. Инициализация Go-модуля
@@ -36,19 +35,6 @@ docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod init my-go-ap
 Инициализация модуля go mod для удовлетворения зависимостей
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod tidy
-```
-
-Запустите тесты через Docker, чтобы убедиться, что код работает:
-```shell
-docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go test ./...
-```
-Соберите бинарный файл (опционально):
-```shell
-docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go build -o my-app .
-```
-Бинарник появится в текущей папке. Запустить его можно на хосте, если он совместим, либо через Docker (опционально):
-```shell
-docker run --rm -v "$(pwd):/app" -w /app alpine ./my-app
 ```
 
 ### 3. Файл `sum.go` (простая функция)
@@ -110,7 +96,7 @@ COPY --from=builder /app/my-app .
 CMD ["./my-app"]
 ```
 
-### 7. Файл базового конфига `.golangci.yml`
+### 7. Файл базового конфига `.golangci.yml` (пока не создаю)
 ```yaml
 linters:
   enable:
@@ -179,6 +165,29 @@ jobs:
         run: docker build -t my-go-app:test .
 ```
 
+Запустите тесты через Docker, чтобы убедиться, что код работает:
+```shell
+docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go test ./...
+```
+
+если всё нормально, то тесты могут показать что-то типа:
+```shell
+ok      my-go-app       0.002s
+```
+Соберите бинарный файл (опционально):
+```shell
+docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go build -o my-app .
+```
+Бинарник появится в текущей папке. Запустить его можно на хосте, если он совместим, либо через Docker (опционально):
+```shell
+docker run --rm -v "$(pwd):/app" -w /app alpine ./my-app
+```
+если всё нормально, то тесты могут показать что-то типа:
+```shell
+Hello from Go app!
+2 + 3 = 5
+```
+
 ### 8. Проверить сборку онлайн
 
 - Закоммитьте и запушите в строго в ветку `main` этот файл в ваш репозиторий
@@ -208,7 +217,7 @@ Hello from Go app!
 
 Опционально вы можете зайти в интерактивный режим контейнера для ознакомления и отладки:
 ```shell
-
+docker run -it --rm my-go-app:latest /bin/sh
 ```
 выйти из контейнра:
 ```shell
