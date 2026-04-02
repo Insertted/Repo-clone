@@ -105,6 +105,7 @@ public class MyApp {
 ```shell
 docker build -t my-java-app .
 ```
+> Флаг `-t` задает имя образа
 
 Создание и запуск контейнера:
 ```shell

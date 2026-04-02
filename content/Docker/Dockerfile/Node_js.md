@@ -88,8 +88,9 @@ README.md
 ```shell
 docker build -t my-node-app .
 ```
+> Флаг `-t` задает имя образа
 
-Запуск контейнера с пробросом порта
+Создание и запуск контейнера контейнера с пробросом порта:
 ```shell
 docker run -d -p 3000:3000 --name my-node-app my-node-app
 ```

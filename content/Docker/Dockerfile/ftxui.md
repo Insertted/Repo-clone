@@ -111,6 +111,8 @@ CMD ["ftxui_demo"]
 ```shell
 docker build -t ftxui-demo .
 ```
+> Флаг `-t` задает имя образа
+
 Создание и запуск контейнера
 ```shell
 docker run -it --rm ftxui-demo

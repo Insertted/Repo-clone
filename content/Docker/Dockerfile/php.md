@@ -65,6 +65,8 @@ EXPOSE 80
 ```shell
 docker build -t php-app .
 ```
+> Флаг `-t` задает имя образа
+
 Создание и запуск контейнера:
 ```shell
 docker run -d -p 8081:80 --name my-php-app php-app

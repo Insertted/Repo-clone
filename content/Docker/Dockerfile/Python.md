@@ -39,7 +39,6 @@ print("Hello from Python in Docker! 🐍")
 ```shell
 docker build -t my-python-app .
 ```
-
 > Флаг `-t` задает имя образа
 
 Создание и запуск контейнера:

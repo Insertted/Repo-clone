@@ -65,6 +65,8 @@ end
 ```shell
 docker build -t ruby-app .
 ```
+> Флаг `-t` задает имя образа
+
 Создание и запуск контейнера:
 ```shell
 docker run -it --rm ruby-app
