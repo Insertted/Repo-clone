@@ -63,4 +63,6 @@ docker run -d -p 8081:80 --name my-site my-site
 
 [Откройте http://localhost:8081](http://localhost:8081)
 
+![Скрин работы приложения в браузере](/content/Docker/Dockerfile/img/nginx.png)
+
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
