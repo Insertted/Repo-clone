@@ -24,5 +24,6 @@
 1. [Python скрипт](./Python/README.md)
 1. [MetaSploitTable](./MetaTable/README.md)
 1. [cAdvisor](./cAdvisor/README.md)
+1. [HTTP Server](./http/README.md)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
