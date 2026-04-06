@@ -16,10 +16,13 @@
 1. [Speedtest](./speedtest/README.md)
 1. [Adminer](./Adminer/README.md)
 1. [Redis](./Redis/README.md)
-1. [Pcb2gcode](/content/Docker/ImageLibrary/Pcb2gcode.md)
+1. [pcb2gcode](./pcb2gcode/README.md)
 1. [Ubuntu](/content/Docker/ImageLibrary/Ubuntu.md)
 1. [Alt Linux в Docker](./alt/README.md)
 1. [Jira](./Jira/README.md)
-1. [pcb2gcode](./pcb2gcode/README.md)
+1. [Статический сайт Apache](./Apache_static/README.md)
+1. [Python скрипт](./Python/README.md)
+1. [MetaSploitTable](./MetaTable/README.md)
+1. [cAdvisor](./cAdvisor/README.md)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
