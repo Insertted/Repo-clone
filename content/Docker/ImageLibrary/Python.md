@@ -6,11 +6,24 @@
 
 > Никогда в разработке не используйте пробелы и спец.символы в именах файлов и каталогов!
 
-1. Создайте **Python** скрипт в **Git-bash**
+1. Создайте **Python** скрипт
+
+в **Git-bash**
 ```shell
 echo "print('Hello from Python in Docker')" > script.py
 ```
-2. Запустите скрипт в контейнере **Python** в **PowerChell**
+или в **PowerShell**
+```shell
+echo "print('Hello from Python in Docker')" | Set-Content -Path script.py -Encoding utf8
+```
+
+2. Запустите скрипт в контейнере с **Python**
+
+в **Git-Bash**
+```shell
+docker run --rm -v "$(pwd)":/app python:alpine python /app/script.py
+```
+или в **PowerShell**
 ```shell
 docker run --rm -v ${pwd}:/app python:alpine python /app/script.py
 ```
