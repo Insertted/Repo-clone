@@ -58,16 +58,11 @@ docker build -t my-site .
 
 Создание и запуск контейнера:
 ```shell
-docker run -d -p 8081:80 --name my-site my-site
-```
-```shell
 docker run -d -p 8081:80 --name my-site -v "$(pwd)":/usr/share/nginx/html my-site
 ```
 
 [Откройте http://localhost:8081](http://localhost:8081)
 
 ![Скрин работы приложения в браузере](/content/Docker/Dockerfile/img/nginx.png)
-
-Чтобы обновить содержимое веб-страницы, придёться после изменения `index.html` пересобрать образ проекта
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
