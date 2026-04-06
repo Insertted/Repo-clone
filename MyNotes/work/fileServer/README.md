@@ -29,6 +29,11 @@ docker run -d \
   -v $(pwd):/srv \
   halverneus/static-file-server:latest
 ```
+
+![screen](./img/1.webp)
+
 2. [Откройте: http://localhost:8084](http://localhost:8084)
+
+![screen](./img/2.webp)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
