@@ -16,14 +16,8 @@ my-website/
 mkdir -p my-website && touch my-website/Dockerfile my-website/index.html && cd my-website
 ```
 
-index.html:
-```html
-<!DOCTYPE html>
-<html>
-<head><title>My site on Docker</title></head>
-<body><h1>Hello from Docker!</h1></body>
-</html>
-```
+Файл `index.html`:
+
 или
 ```html
 <!DOCTYPE html>
@@ -40,7 +34,7 @@ index.html:
 ```
 
 
-Dockerfile:
+Файл `Dockerfile`:
 ```dockerfile
 # Используем официальный легковесный образ Nginx
 FROM nginx:alpine
