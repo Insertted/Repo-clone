@@ -8,7 +8,7 @@
 
 1. Создайте **Python** скрипт в **Git-bash**
 ```shell
-echo "print('Hello from Python in Docker!')" > script.py
+echo "print('Hello from Python in Docker')" > script.py
 ```
 2. Запустите скрипт в контейнере **Python** в **PowerChell**
 ```shell
