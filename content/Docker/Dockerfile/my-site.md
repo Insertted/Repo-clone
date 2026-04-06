@@ -61,7 +61,7 @@ docker build -t my-site .
 docker run -d -p 8081:80 --name my-site my-site
 ```
 ```shell
-docker run -d -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx
+docker run -d -p 8081:80 --name my-site -v "$(pwd)":/usr/share/nginx/html my-site
 ```
 
 [Откройте http://localhost:8081](http://localhost:8081)
