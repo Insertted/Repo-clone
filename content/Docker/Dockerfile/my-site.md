@@ -55,7 +55,13 @@ docker build -t my-site .
 docker run -d -p 8081:80 --name my-site -v "$(pwd)":/usr/share/nginx/html my-site
 ```
 
-[Откройте http://localhost:8081](http://localhost:8081)
+Пояснение:
+* `-v "$(pwd)":/usr/share/nginx/html` — монтирует вашу текущую папку (где лежит `index.html`) в директорию, откуда **Nginx** берёт файлы.
+* `$(pwd)` в **Linux/macOS/Git Bash**; в **PowerShell** используйте `${PWD}`.
+
+Теперь любые изменения в `index.html` на хосте мгновенно отобразятся на сайте (потребуется обновить страницу в браузере).
+
+[Откройте в браузере http://localhost:8081 для проверки](http://localhost:8081)
 
 ![Скрин работы приложения в браузере](/content/Docker/Dockerfile/img/nginx.png)
 
