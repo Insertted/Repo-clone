@@ -6,6 +6,8 @@
 
 ## Работы
 
+1. [Hello Docker](./img/hellow.png)
+
 1. [Статический сайт на веб-сервере Nginx](./img/real1.png)
 1. [Простое приложение на Python](./img/real2.webp)
 1. [Flask+Python (мини-проект)](./img/1.webp)
