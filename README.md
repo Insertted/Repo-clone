@@ -179,7 +179,12 @@ git config --global user.email "rosa@mail.ru"
 - [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
 - [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
-Открыть и закрыть интегрированный терминал **VS Code** по команде **Ctrl+~**
+Открыть и закрыть интегрированный терминал **VS Code** по команде **Ctrl+~** (контрл тильда)
+
+Для запуска **VS Code** в **WSL** (Ubuntu) в Windows выполните в терминале **Ubuntu** команду:
+```shell
+code .
+```
 
 [Подробней о настройках VSCode](https://gitflic.ru/project/rurewa/education/blob?file=content/Programming/VCode.md&branch=master&mode=markdown)
 
