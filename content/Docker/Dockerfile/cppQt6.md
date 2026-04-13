@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
     // Создаём вертикальный layout
     QVBoxLayout *layout = new QVBoxLayout(&window);
     // Добавляем текстовую метку
-    QLabel *label = new QLabel("Привет из Docker-контейнера с Qt6! 🐳");
+    QLabel *label = new QLabel("Привет из Docker-контейнера с Qt6!");
     label->setAlignment(Qt::AlignCenter);
     layout->addWidget(label);
     // Добавляем кнопку
